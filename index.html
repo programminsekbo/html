@@ -7,22 +7,19 @@
 </head>
 <body>
     
-    <h1>my name is</h1>
+    <h1 id="num">my name is</h1>
     <button onclick="myname()">click here</button>
     
 
     <script>
-
+     
         function myname() {
-            let  hri = document.getElementsByTagName("h1");
-        hri[0].innerHTML;
+            let a = document.getElementById("num")
+            let b = a.innerText;
+            alert(b);
 
-
-        console.log(hri)
-
-        };
-        
-        
+            
+        }
         
       
 
