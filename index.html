@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <h1 id="num">my name is</h1>
+    <h1 id="num">0</h1>
     <button onclick="myname()">click here</button>
     
 
@@ -15,10 +15,18 @@
      
         function myname() {
             let a = document.getElementById("num")
-            let b = a.innerText;
-            alert(b);
+            let numValue = parseInt(a.innerText);
+             numValue = numValue+1;
+              a.innerText= numValue;
 
             
+        }
+        function myname() {
+            let a = document.getElementById("num")
+            let numValue = parseInt(a.innerText);
+             numValue = numValue-1;
+              a.innerText= numValue;
+
         }
         
       
